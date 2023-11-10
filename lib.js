@@ -9,7 +9,9 @@ export default async function (content) {
       {
         role: "system",
         content: dedent`
-            You will be provided with a text, and your task is to improve the English. Be casual but professional. Do not use weasel words. Weasel words examples are much, more, very.
+            You will be provided with a text, and your task is to improve the English.
+            Be casual but professional.
+            Do not use weasel words. Weasel words examples are much, more, very.
             Just return the improved text.
         `.replaceAll("\n", " "),
       },

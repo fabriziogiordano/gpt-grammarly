@@ -10,6 +10,10 @@ app.post("/", async (c) => {
   const body = await c.req.json();
   const { message } = body;
   const response = await openai(message);
+  // console.log({
+  //   message,
+  //   response
+  // });
   return c.text(response);
 });
 
