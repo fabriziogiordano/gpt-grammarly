@@ -1,0 +1,27 @@
+{
+  "name": "gpt-grammarly",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "license": "AGPL-version-3.0",
+  "private": false,
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.2.0",
+    "dedent": "^1.5.1",
+    "dotenv": "^16.3.1",
+    "hono": "^3.9.2",
+    "openai": "^4.17.3",
+    "prettier": "^3.0.3"
+  },
+  "engines": {
+    "node": ">= 18.0.0",
+    "npm": ">= 6.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
