@@ -10,7 +10,7 @@ export default async function (content) {
         role: "system",
         content: dedent`
             You will be provided with a text, and your task is to improve the English.
-            Be casual but professional.
+            Craft the text to be professional but with some casual aspect to it.
             Do not use weasel words. Weasel words examples are much, more, very.
             Just return the improved text.
         `.replaceAll("\n", " "),
@@ -20,8 +20,8 @@ export default async function (content) {
         content: content,
       },
     ],
-    model: "gpt-3.5-turbo",
-    // model: "gpt-4-1106-preview",
+    // model: "gpt-3.5-turbo",
+    model: "gpt-4-1106-preview",
   });
 
   return completion.choices[0].message.content;
