@@ -1,5 +1,8 @@
 # GPT Grammarly
 
+Install Karabinier Element and assign the hotkey
+Install Hammerspoon to manage keyboard shortcuts
+
 ## Commands
 
 `command + s` -> select all the text and convert it

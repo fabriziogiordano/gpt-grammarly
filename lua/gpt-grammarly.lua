@@ -1,5 +1,3 @@
---- DEPRECATED ---
-
 local timer = hs.timer
 local eventtap = hs.eventtap
 local http = hs.http
