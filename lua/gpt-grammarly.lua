@@ -1,3 +1,5 @@
+--- DEPRECATED ---
+
 local timer = hs.timer
 local eventtap = hs.eventtap
 local http = hs.http
@@ -22,6 +24,7 @@ function gptGrammarly()
                 ["Content-Type"] = "application/json; charset=UTF-8"
             }, function(http_number, body, headers)
                 print("Local server called")
+                print(body)
                 -- print(http_number)
                 -- print(body)
                 if http_number == 200 then
