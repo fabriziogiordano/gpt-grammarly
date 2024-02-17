@@ -1,4 +1,4 @@
-import 'dotenv/config'
+import "dotenv/config";
 
 import { serve } from "@hono/node-server";
 import { Hono } from "hono";
@@ -13,7 +13,4 @@ app.post("/", async (c) => {
   return c.text(response);
 });
 
-serve({
-  fetch: app.fetch,
-  port: 8787,
-});
+serve({ fetch: app.fetch, port: 8787 });
