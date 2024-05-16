@@ -10,11 +10,11 @@
     "start": "nodemon app.js"
   },
   "dependencies": {
-    "@hono/node-server": "^1.7.0",
-    "dedent": "^1.5.1",
-    "dotenv": "^16.4.4",
-    "hono": "^4.0.2",
-    "openai": "^4.28.0",
+    "@hono/node-server": "^1.11.1",
+    "dedent": "^1.5.3",
+    "dotenv": "^16.4.5",
+    "hono": "^4.3.6",
+    "openai": "^4.47.1",
     "prettier": "^3.2.5"
   },
   "engines": {
