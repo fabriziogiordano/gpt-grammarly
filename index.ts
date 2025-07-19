@@ -1,7 +1,11 @@
 import openai from "./openai.ts"
 
+const PORT = 8787;
+
+console.log("Starting Grammarly Server");
+
 Bun.serve({
-  port: 8787,
+  port: PORT,
   routes: {
     // Per-HTTP method handlers
     "/": {
