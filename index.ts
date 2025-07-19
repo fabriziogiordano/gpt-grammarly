@@ -1,9 +1,22 @@
-import { serve } from "bun";
+import openai from "./openai.ts"
 
 Bun.serve({
-  port: 8080, // defaults to $BUN_PORT, $PORT, $NODE_PORT otherwise 3000
-  hostname: "mydomain.com", // defaults to "0.0.0.0"
+  port: 8787,
+  routes: {
+    // Per-HTTP method handlers
+    "/": {
+      GET: () => new Response("List posts"),
+      POST: async req => {
+        const { message } = await req.json();
+        console.log(message);
+        const response = await openai(message);
+        console.log(response);
+        return new Response(response);
+      },
+    },
+  },
   fetch(req) {
-    return new Response("404!");
+    console.log("Not Found: 404 Error");
+    return new Response("Not Found: 404", { status: 404 });
   },
 });
