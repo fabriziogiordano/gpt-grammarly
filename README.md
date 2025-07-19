@@ -20,3 +20,7 @@ curl -X POST -H "Content-Type: application/json" -d '{ "message": "I was thinkin
 npm install pm2 -g
 pm2 start index.js --name gpt-grammarly --watch
 ```
+
+# Start TMUX
+tmux new -s grammarly
+npm run start
